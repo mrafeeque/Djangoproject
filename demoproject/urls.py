@@ -22,6 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('myappurl/',include('myapp.urls')),
     path('rafappurl/',include('rafapp.urls')),
-    path('linkedinlogin/',include('linkedin.urls')),
+    path('',include('linkedin.urls')),
     path('signup/',include('signup.urls')) 
 ]
