@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-ypf+7!pzo(d#in-=3)u1033gu#$o2=sh2xrl$t#pvvejy45d+1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['rafeequedemo.herokuapp.com']
+ALLOWED_HOSTS = ['rafeequedemo.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -120,17 +120,17 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 STATICFILES_DIRS=[ 
-    os.path.join(BASE_DIR,'linkedin/static'),
-    os.path.join(BASE_DIR,'signup/static'),
+   # os.path.join(BASE_DIR,'static')
+   # os.path.join(BASE_DIR,'signup/static'),
 ]
 
 STATIC_ROOT = [
     os.path.join(BASE_DIR,'static')
 ] 
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
